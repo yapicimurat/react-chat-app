@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import MessageList from './MessageList';
 import {io} from "socket.io-client";
 
-const socket = io("https://muratyapici.herokuapp.com");
+const socket = io("http://muratyapici.herokuapp.com");
 let nickname = "";
 console.log("uygulama baslayacak insallah v3");
 socket.on("connect",() => {
