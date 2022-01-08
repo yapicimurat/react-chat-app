@@ -5,18 +5,18 @@ import {io} from "socket.io-client";
 
 const socket = io("https://muratyapici.herokuapp.com/");
 let nickname = "";
-console.log("uygulama baslayacak insallah v2");
+console.log("uygulama baslayacak insallah v3");
 socket.on("connect",() => {
-  
- 
-  
-});
-nickname = prompt("Enter a nickname");
+  nickname = prompt("Enter a nickname");
 ReactDOM.render(
   <React.StrictMode>
     <MessageList/>
   </React.StrictMode>,
   document.getElementById('root')
 );
+ 
+  
+});
+
 
 export {socket, nickname};
