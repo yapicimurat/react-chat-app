@@ -11,8 +11,8 @@ const io = require("socket.io")(server, {
     }
 });
 
-server.listen(3001, () => {
-    console.log("Server is listening on port 3001...");
+server.listen(provess.env.port || 5500, () => {
+    console.log("Server is listening on port 5500...");
 });
 
 io.on("connection", (socket) => {
