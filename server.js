@@ -11,7 +11,7 @@ const io = require("socket.io")(server, {
     }
 });
 
-server.listen(process.env.PORT || 3001, () => {
+server.listen(3001, () => {
     console.log("Server is listening on port 3001...");
 });
 
