@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import MessageList from './MessageList';
 import {io} from "socket.io-client";
 
-const socket = io("http://localhost:3000");
+const socket = io("https://muratyapici.herokuapp.com:3000");
 let nickname = "";
 socket.on("connect",() => {
   nickname = prompt("Enter a nickname");
